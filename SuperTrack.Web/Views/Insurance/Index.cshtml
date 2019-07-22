@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--header+breadcrumb-->
+<section>
+    <div class="bg-header">
+        <div class="container py-5">
+            <div class="display-4 text-success text-center py-4">Insurance Information</div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white mb-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Super Track Urgent Care</a></li>
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Insurance")">Insurance</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</section>
+<!--/header+breadcrumb-->
+
+<section class="container py-5">
+    <div class="row">
+        <!--//-->
+        <div class="col-12">            
+            <p class="text-secondary">
+                We know that costs matter. Super Track works with most of the major insurances to bring you affordable health care. We also offer affordable care to those who are uninsured with upfront pricing and no hidden costs.
+            </p>
+            <p>
+                <ul class="text-secondary">
+                    <li>BCBS</li>
+                    <li>Kaiser</li>
+                    <li>Medicare</li>
+                    <li>Premera Blue Cross</li>
+                    <li>Regence Blue Shield</li>
+                    <li>Sound Path</li>
+                    <li>Workers Comp (L&I)</li>
+                    <li>Aetna</li>
+                    <li>Tricare</li>
+                    <li>First Choice (Out of network, charges may apply)</li>
+                    <li>Cigna (Out of network, charges may apply)</li>
+                    <li>United Healthcare (Out of network, charges may apply)</li>
+                </ul>
+            </p>
+        </div>
+        <!--//-->
+
+    </div>
+</section>
+
+<!--services-->
+@{
+    Html.RenderPartial("_Services");
+}
+<!--/services-->
+
+<!--our-locations-->
+@{
+    Html.RenderPartial("_OurLocations");
+}
+<!--/our-locations-->

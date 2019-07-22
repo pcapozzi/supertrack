@@ -1,0 +1,595 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--header+breadcrumb-->
+<section>
+    <div class="bg-header">
+        <div class="container py-5">
+            <div class="display-4 text-success text-center py-4">Testimonials & Reviews</div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white mb-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Super Track Urgent Care</a></li>
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Testimonials")">Testimonials & Reviews</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</section>
+<!--/header+breadcrumb-->
+
+<section class="container pt-5">
+    <!--share-feedback-->
+    <div class="row">
+        <div class="col-lg-4 col-md-5 mb-4 mb-lg-0">
+            <div class="text-dark font-weight-bold text-center mb-2">
+                <span class="bg-warning p-2">4.63/5</span>
+            </div>
+            <div class="h4 my-2 font-weight-normal text-dark">Super Track Urgent Care</div>
+            <div class="h6 font-weight-lighter text-secondary">
+                Urgent Care & Walk-In Clinic located in Bellingham, WA & Point Roberts, WA
+            </div>
+            <div><hr /></div>
+            <div class="text-center">
+                <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star-half-alt text-warning fa-lg"></i></span>
+                <div class="text-dark font-weight-sm mt-1">24 Total Reviews</div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-7">
+            <p class="text-secondary">
+                Super Track Urgent Care always appreciates feedback from our valued patients. To date, we’re thrilled to have collected 24 reviews with an average rating of 4.63 out of 5 stars. Please read what others are saying about Super Track Urgent Care below, and as always, we would love to collect your feedback.
+            </p>
+            <div class="pt-3 text-center text-lg-left">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success border-0 text-uppercase font-weight-sm" data-toggle="modal" data-target="#exampleModal">
+                    Share feedback
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index:99999999;">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <div class="modal-title">
+                                    <div class="font-weight-bold text-secondary small">SHARE FEEDBACK</div>
+                                    <div class=" h3 font-weight-lighter text-dark" id="exampleModalLabel">Select Location</div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body pt-0">
+                                <div class="card">
+                                    <div class="card-body p-4 bg-light">
+                                        <!--modal-body-->
+                                        <section>
+                                            <div class="row py-4">
+                                                <div class="col-lg-6 mb-4">
+                                                    <div class="card">
+                                                        <div class="card-header bg-white text-uppercase p-1 border-0">Lakeway Drive, Bellingham</div>
+                                                        <div class="card-body p-0">
+                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.3836116893494!2d-122.46284787903514!3d48.74403427435612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485a3ea3ebf2ff3%3A0x1b80588e57c15829!2s1050+Lakeway+Dr%2C+Bellingham%2C+WA+98226%2C+USA!5e0!3m2!1sen!2sin!4v1562744577936!5m2!1sen!2sin" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                        </div>
+                                                        <div class="card-footer bg-white text-center p-0">
+                                                            <button type="button" class="btn btn-info btn-block">Select</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 mb-4 mb-lg-0">
+                                                    <div class="card-header bg-white text-uppercase p-1 border-0">36th Street, Bellingham</div>
+                                                    <div class="card">
+                                                        <div class="card-body p-0">
+                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.6291934611863!2d-122.47443348491784!3d48.73167661757526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485a3d04e7370e3%3A0x4ed86025952d61d3!2s302+36th+St%2C+Bellingham%2C+WA+98225%2C+USA!5e0!3m2!1sen!2sin!4v1562744738183!5m2!1sen!2sin" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                        </div>
+                                                        <div class="card-footer bg-white text-center p-0">
+                                                            <button type="button" class="btn btn-info btn-block">Select</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 mb-4 mb-lg-0">
+                                                    <div class="card-header bg-white text-uppercase p-1 border-0">Point Roberts, Point Roberts</div>
+                                                    <div class="card">
+                                                        <div class="card-body p-0">
+                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10475.001297320558!2d-123.063144!3d48.977277!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa3064b4f53fc89c!2sPoint+Roberts+Clinic!5e0!3m2!1sen!2sus!4v1562745144005!5m2!1sen!2sus" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                        </div>
+                                                        <div class="card-footer bg-white text-center p-0">
+                                                            <button type="button" class="btn btn-info btn-block">Select</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!--/modal-body-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 pt-3">
+            <hr />
+        </div>
+    </div>
+    <!--/share-feedback-->
+</section>
+
+
+
+<!--client-feedback-->
+<section id="client-feedback" class="container">    
+    <div class="tab-content" id="pills-tabContent">
+        <!--page 1-->
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">JACOB J S.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 06/30/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Efficient, thorough, and empathetic.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">KRYSTEN E S.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 05/22/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Personable and very caring. I would definetly come back here! I feel like most DRs would have dont the trivial basics and kicked me out after hours of waiting. He was gentle, quick, and genuinely cared about treating my needs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">VINNEY V S.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 04/22/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                QUALITY service from EVERYONE. Very COMMUNICATIVE and NICE. Even took the time to ask how my overall health is. Very PROFESSIONAL of Sean!!! :) I don't have insurance yet but this place treats me well and fair with prices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">Amari M.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 03/16/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Quick, easy, friendly, efficient! Light years ahead of the Peace Health conglomerate where waiting is the norm and having to talk to different people all the time is the norm. Recommended!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">ANNIKA L L.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 03/16/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                This was a very easy and helpful experience!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">Martha H.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 03/12/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                The best most friendly group of people I have encountered in my first trip to the northwest. Everyone was kind and caring and just great in helping me. front desk crackerjack, and back of the house just fabulous . thank you everyone. You have a fan in New Jersey if you ever come visit our state.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">JULIA R Q.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 03/03/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                We received excellent care. Dr. B was caring and professional. We really appreciate having Super Track in our community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">ALLISON <br />CHARLOTTE S.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 01/27/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                felt very safe and comfortable. the doctor was very patient with me and answered all questions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/page 1-->
+
+        <!--page 2-->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">Dale T.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-secondary fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 01/19/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Everyone was very friendly and patient. The provider was kind and efficient. However, being a new clinic, I was concern feed about the privacy issues. No HIPAA notice posted or offered, speaking with patients in person or over the phone where others could easily listen, things like that. I'm sure it is oversight and it will be remedied....
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">ELIZABETH B.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 01/19/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Absolutely recommend coming here! I was impressed with the speed, the cleanliness and most importantly, a kind, attentive and knowledgeable staff!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">ANTHONY W.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-secondary fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 01/14/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Excellent health care very happy with the staff and Dr. Sean! They helped me out very thoroughly and completely I will definitely be back when i need health care!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">EVAN P.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 01/12/19</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Very friendly, quick, and painless!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">JACKSON A B.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 12/23/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Fast and efficient - they listen to my concerns and advise accordingly. Very happy with my visits here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">KAREN N.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-secondary fa-lg"></i></span>  <span><i class="fas fa-star text-secondary fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 12/22/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Little to no wait. I got good answers and the prescription I needed. I will definitely go back again when necessary.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 mb-4 col-md-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">VALERIE BROOKE W.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 12/01/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Best urgent care in Bellingham by far! On-site pharmacy makes it quick and convenient
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">Carmen A.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 10/06/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Making an appointment online was really easy. The facility is clean and well equipped. The staff is friendly and professional and I was happy with the explanation and recommendations the doctor gave me.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/page 2-->
+
+        <!--page 3-->
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">Sarah T.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 09/30/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                It was easy to obtain an appointment through the online scheduling. My boyfriend and I both were seen and I felt well cared for. All questions were answered and I didn’t feel rushed in and out even though the doctor had multiple patients. I had a pleasant experience and felt less stressed when we left.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">JOSIAH SCOTT H.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 09/30/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Super track is great. I’ve been there twice and everyone there is friendly, helpful and very knowledgeable. Add to that short wait times and reasonable prices,I’m definitely coming back! Thanks super track!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">GRAHAM S.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 09/29/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                The providers I saw (Jeremy, PA-C and Sean, MD) were wonderful, caring, and thorough with my newborn.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">Nora T.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 09/02/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Dr. Sean and his team were wonderful! Dr. Sean was thorough and had wonderful bedside manner!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">Elizabeth M.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 09/02/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Everyone was super nice and personable! I felt very well taken care of!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">CHRISTINA W.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-secondary fa-lg"></i></span>  <span><i class="fas fa-star text-secondary fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 09/02/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                I was provided with excellent care. Clinic is very clean and modern.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">TRACY UNA W.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 08/04/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                I made an appointment online about a possible ankle injury. I was greeted quickly and walked through the paperwork process which made it easy & effortless. The nurse was sweet, personable, caring, and thorough. She made me feel very comfortable, and calmed my 'white coat' anxiety. The doctor was as gentle as he could be while checking my ankle. Very thorough in his diagnosis and making sure I understood. Ultimately, he sent me to get x-rays and asked for the results to be delivered asap. The doctor called quickly after receiving the results and went over them before recommending steps to take in my recovery and over all better bone health! All in all, from start to finish, it was a wonderful experience! Thank You SOoo Much to the whole staff I appreciate all of your hard dedicated work - especially on a beautiful Saturday afternoon!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-lg-5">
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="h4 my-2 font-weight-bold text-dark text-uppercase">Justin A.</div>
+                    <div class="">
+                        <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-warning fa-lg"></i></span>  <span><i class="fas fa-star text-secondary fa-lg"></i></span>  <span><i class="fas fa-star text-secondary fa-lg"></i></span>
+                        <div class="text-dark font-weight-sm mt-1">Submitted 08/03/18</div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-secondary mb-0">
+                                Very short
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/page 3-->
+    </div>  
+    <!--pagination-->
+    <div class="row py-5 justify-content-center">
+        <nav class="col-lg-2 col-md-3 col-5 Page navigation example">
+            <ul class="nav nav-pills pagination" id="pills-tab" role="tablist">
+                <li class="nav-item page-item">
+                    <a class="nav-link active page-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">1</a>
+                </li>
+                <li class="nav-item page-item">
+                    <a class="nav-link page-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">2</a>
+                </li>
+                <li class="nav-item page-item">
+                    <a class="nav-link page-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">3</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--/pagination-->
+
+</section>
+<!--/client-feedback-->

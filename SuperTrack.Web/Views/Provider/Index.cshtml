@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--header+breadcrumb-->
+<section>
+    <div class="bg-header">
+        <div class="container py-5">
+            <div class="display-4 text-success text-center py-4">Meet Our Providers</div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white mb-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Super Track Urgent Care</a></li>
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Provider")">Providers</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</section>
+<!--/header+breadcrumb-->
+<!--meet our providers-->
+<section class="container py-5 cards-height">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-12 h2 font-weight-lighter text-dark mb-4 pb-3 text-center">Meet Our Providers</div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
+                <div class="card">
+                    <a href="@Url.Action("SeanBozorgzadehMd", "Provider")">
+                        <div class="card-body text-center">
+                            <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/1764798.jpg" class="img-fluid img-provider" alt="Responsive image">
+                            <div class="h4 mt-3 mb-1 font-weight-normal text-secondary">Sean Bozorgzadeh, MD</div>
+                            <div class="h5 font-weight-lighter text-secondary">Emergency Medicine Physician</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-4">
+                <div class="card">
+                    <a href="@Url.Action("MaeLaryMd", "Provider")">
+                        <div class="card-body text-center">
+                            <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/1764795.jpg" class="img-fluid img-provider" alt="Responsive image">
+                            <div class="h4 mt-3 mb-1 font-weight-normal text-secondary">Mae Lary, MD</div>
+                            <div class="h5 font-weight-lighter text-secondary">Internist</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="card">
+                    <a href="@Url.Action("TimothyManzoDo", "Provider")">
+                        <div class="card-body text-center">
+                            <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/1764793.jpg" class="img-fluid img-provider" alt="Responsive image">
+                            <div class="h4 mt-3 mb-1 font-weight-normal text-secondary">Timothy Manzo, DO</div>
+                            <div class="h5 font-weight-lighter text-secondary">Emergency Medicine Physician</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="card cursor-pointer">
+                    <div class="card-body text-center">
+                        <a href="@Url.Action("JeremyQuinnPa", "Provider")">
+                            <img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/1764791.jpg" class="img-fluid img-provider" alt="Responsive image">
+                            <div class="h4 mt-3 mb-1 font-weight-normal text-secondary">Jeremy Quinn, PA</div>
+                            <div class="h5 font-weight-lighter text-secondary">Physician Assistant</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/meet our providers-->
+<!--contact us-->
+@{
+    Html.RenderPartial("_ContactUs");
+}
+<!--/contact us-->
+<!--clientTestimonial-->
+@{
+    Html.RenderPartial("_ClientTestimonial");
+}
+<!--/clientTestimonial-->
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

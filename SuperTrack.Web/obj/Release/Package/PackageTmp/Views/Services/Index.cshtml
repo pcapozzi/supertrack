@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--header+breadcrumb-->
+<section>
+    <div class="bg-header">
+        <div class="container py-5">
+            <div class="display-4 text-success text-center py-4">Urgent Care Services</div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white mb-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Super Track Urgent Care</a></li>
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Services")">Urgent Care Services</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</section>
+<!--/header+breadcrumb-->
+
+<section class="container py-5">   
+    <div class="row">
+        <!--Proudly Serving Whatcom County-->
+        <div class="col-12">
+            <div class="h5 font-weight-sm text-success mb-3"> Proudly Serving Whatcom County</div>
+            <p class="text-secondary">
+                Super Track’s urgent care facility offers a state of the art environment for your medical needs. Founded in 2018 Super Track’s team of veteran doctors provides a level of health care experience unmatched in the area.
+            </p>
+            <p class="text-secondary">
+                Our facility is intended to treat you and your families non-medical emergency health concerns. If you are suffering from an ear infection, sore throat, flu-like symptoms, infections, burns, sprains, and broken bones contact our office or walk in for immediate assistance.
+            </p>
+            <p class="text-secondary mb-0">
+                While you can make an appointment ahead of time, walk-ins are always welcome. Our convenient location in Bellingham, Washington makes access to our facility quick and painless.
+            </p>
+        </div>
+        <!--Proudly Serving Whatcom County-->
+
+        <div class="col-12 my-2">
+            <hr />
+        </div>
+
+        <!--Services We Provide-->
+        <div class="col-12">
+            <div class="h5 font-weight-sm text-success mb-3">Services We Provide</div>
+            <p class="text-secondary">
+                While this isn’t an exhaustive list, here is a brief run-down of the treatments we have available for patients of all ages.
+            </p>
+            <div class="h6 font-weight-sm text-dark mb-3">Illness Treatment and Prevention</div>
+            <p class="text-secondary">
+                Our team can provide care for your whole family. We treat the full range of non-emergency illnesses, such as colds, flu, infections, headaches, skin conditions, and more. Our caring, knowledgeable team will evaluate you, provide any on site-testing, and prescribe appropriate treatment so you can get back to feeling better quickly.
+            </p>
+            <div class="h6 font-weight-sm text-dark mb-3">Minor Injuries</div>
+            <p class="text-secondary">
+                For injuries that don’t require emergency treatment, Super Track can provide prompt, affordable evaluation, including diagnostic testing such as x-rays and ultrasound, and treatment to provide fast relief for your injuries.
+            </p>
+            <div class="h6 font-weight-sm text-dark mb-3">Physicals</div>
+            <p class="text-secondary">
+                Super Track is happy to offer physicals to meet state or employer requirements, including physicals for:
+            </p>
+            <p>
+                <ul class="text-secondary">
+                    <li>Athletics and Sports</li>
+                    <li>School</li>
+                    <li>Employment</li>
+                    <li>Washington State Department of Transportation (subject to availability)</li>
+                    <li>Camp and Daycare</li>
+                    <li>Insurance Plans</li>
+                </ul>
+            </p>
+        </div>
+        <!--/Services We Provide-->
+
+    </div>  
+</section>
+
+<!--services-->
+@{
+    Html.RenderPartial("_Services");
+}
+<!--/services-->
+
+<!--our-locations-->
+@{
+    Html.RenderPartial("_OurLocations");
+}
+<!--/our-locations-->

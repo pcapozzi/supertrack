@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--header+breadcrumb-->
+<section>
+    <div class="bg-header">
+        <div class="container py-5">
+            <div class="display-4 text-success text-center py-4">Plan Your Visit</div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white mb-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Super Track Urgent Care</a></li>
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "PlanYourVisit")">Plan Your Visit</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</section>
+<!--/header+breadcrumb-->
+
+<section class="container py-5">
+    <div class="row">
+        <!--//-->
+        <div class="col-12">
+            <p class="text-secondary">
+                Whether you walk in or make an appointment, you will be greeted by our welcoming front staff. One of our friendly nurses will then take you to our triage area to assess your medical history, vitals, and any other initial testing if needed.
+            </p>
+            <p class="text-secondary">
+                You will then be seen promptly by one of our providers who will make your visit as smooth and comfortable as possible.
+            </p>
+            <p class="text-secondary">
+                For your convenience, we offer on-site point-of-care testing including labs, EKGs, and x-rays to help us diagnose and treat you.
+            </p>
+            <p class="text-secondary">
+                Quick results mean a speedier recovery, which means you can get back to doing what you love faster.
+            </p>
+            <p class="text-secondary">
+                If you are a new patient, please make sure to have the following information ready:
+            </p>
+            <p>
+                <ul class="text-secondary">
+                    <li>Driver’s License or other government photo ID</li>
+                    <li>Health insurance card (check our list of networked providers, though we take uninsured patients as well)</li>
+                    <li>A list of any medications you’re currently taking</li>
+                    <li>Any allergies you have</li>
+                    <li>Camp and Daycare</li>
+                    <li>Insurance Plans</li>
+                </ul>
+            </p>
+            <p class="text-secondary mb-0">
+                If you are a returning patient, let us know if there are any changes in the above information.
+            </p>
+        </div>
+        <!--//-->
+
+        <div class="col-12 my-2">
+            <hr />
+        </div>
+
+        <!--Hours-->
+        <div class="col-12">
+            <div class="h5 font-weight-sm text-success mb-3">Hours</div>
+            <p class="text-secondary">
+                Naturally, feeling sick or being injured isn’t something you plan on happening. Super Track is here to help you on those bad days, every day with the following hours:
+            </p>
+            <p class="mb-0">
+                <ul class="text-secondary">
+                    <li>Monday to Friday: 10 am – 8 pm</li>
+                    <li>Saturdays: 10 am – 6 pm</li>
+                    <li>Sundays: 10 am – 4 pm</li>
+                </ul>
+            </p>
+
+        </div>
+        <!--/Hours-->
+
+        <div class="col-12 my-2">
+            <hr />
+        </div>
+
+        <!--Super Track or Emergency Room?-->
+        <div class="col-12">
+            <div class="h5 font-weight-sm text-success mb-3">Super Track or Emergency Room?</div>
+            <p class="text-secondary">
+                While we pride ourselves on our speed, there are some conditions that are best served at an emergency room than at our clinic. With that in mind, <span class="font-weight-bold">please dial 911 or visit your nearest emergency room if you or someone you know experiences the following:</span>
+            </p>
+            <p class="mb-0">
+                <ul class="text-secondary">
+                    <li>Chest pain</li>
+                    <li>Respiratory distress</li>
+                    <li>Severe allergic reactions</li>
+                    <li>Trauma, serious head injury, or symptoms of stroke</li>
+                    <li>Uncontrollable bleeding</li>
+                    <li>Unconsciousness</li>
+                </ul>
+            </p>
+
+        </div>
+        <!--/Super Track or Emergency Room?-->
+    </div>
+</section>
+
+<!--services-->
+@{
+    Html.RenderPartial("_Services");
+}
+<!--/services-->
+<!--our-locations-->
+@{
+    Html.RenderPartial("_OurLocations");
+}
+<!--/our-locations-->

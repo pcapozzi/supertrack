@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section>
+    <!--header+breadcrumb-->
+    <div class="bg-header">
+        <div class="container py-5">
+            <div class="display-4 text-success text-center py-4">About Super Track Urgent Care</div>
+        </div>
+    </div>
+    <div class="bg-light">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-light mb-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Super Track Urgent Care</a></li>
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "About")">About</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!--/header+breadcrumb-->
+    <!--about supertrack-->
+    @{
+        Html.RenderPartial("_About");
+    }
+    <!--/about supertrack-->
+
+    <!--client testimonial-->
+    @{
+        Html.RenderPartial("_ClientTestimonial");
+    }
+    <!--/client testimonial-->
+</section>
+

@@ -1,0 +1,73 @@
+﻿@model SuperTrack.Web.Models.SendEmailViewModel
+
+
+
+<section class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12 h6 font-weight-bold text-secondary text-center">CONTACT US</div>
+            <div class="col-12 h2 font-weight-lighter text-dark pb-1 text-center">Send A Message To Super Track Urgent Care</div>
+            <div class="col-12 font-weight-lighter text-muted mb-4 pb-3 text-center">If you have any questions, concerns, or comments regarding Super Track Urgent Care, please fill out the short contact form below.</div>
+        </div>
+        @using (Html.BeginForm("Index", "Provider", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+        <div class="row" id="contact-form">
+            <div class="col-12">
+                @if (!string.IsNullOrEmpty(ViewBag.Message))
+                {
+                    <h5 class="pb-2 text-center"><span><i class="far fa-smile text-warning fa-3x"></i></span>&nbsp;<span class="text-success">@ViewBag.Message</span></h5>
+                }
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Location, new { @class = "font-weight-sm text-uppercase" })
+                    @Html.DropDownListFor(m => m.Location, new SelectList(@ViewBag.SelectLocation, "Text", "Text"), new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Location, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Doctor, new { @class = "font-weight-sm text-uppercase" })
+                    @Html.DropDownListFor(m => m.Doctor, new SelectList(@ViewBag.SelectDoctor, "Text", "Text"), new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Doctor, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Name, new { @class = "font-weight-sm text-uppercase" })
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.EmailAddress, new { @class = "font-weight-sm text-uppercase" })
+                    @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.EmailAddress, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.PhoneNumber, new { @class = "font-weight-sm text-uppercase" })
+                    @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Comments, new { @class = "font-weight-sm text-uppercase" })
+                    @Html.TextAreaFor(m => m.Comments, new { @class = "form-control", rows = "5" })
+                    @Html.ValidationMessageFor(m => m.Comments, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label>
+                        @Html.CheckBoxFor(x => x.TermsAndConditions, new { required = "required" })
+                       I understand and agree that any information submitted will be forwarded to our office by email and not via a secure messaging system. This form should not be used to transmit private health information, and we disclaim all warranties with respect to the privacy and confidentiality of any information submitted through this form
+                    </label>
+                    @Html.ValidationMessageFor(m => m.TermsAndConditions, "", new { @class = "text-danger" })                   
+                </div>                
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-theme="light" data-size="normal" data-image="image"></div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-success  font-weight-sm">SEND</button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section>
+
+
